@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Calculator app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="first-theme">
+    <main class="main">
+        <header class="header">
+          <h3 class="logo">calc</h3>
+          <div class="header__flex">
+            <span class="theme__text">THEME</span>
+            <div class="toggle__container">
+              <div class="toggle__number">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+              </div>
+              <div class="toggle">
+                <input type="checkbox" class="checkbox">
+                <label for="checkbox" class="label">
+                  <div class="ball show-ball theme-1" data-theme="first-theme"></div>
+                  <div class="ball theme-2" data-theme="second-theme"></div>
+                  <div class="ball theme-3" data-theme="third-theme"></div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </header>
+    
+        <section class="output__section">
+          <div class="output"></div>
+        </section>
+    
+        <section class="input__section">
+          <div class="inputs">
+            <div class="number__buttons">
+              <button class="button button__calc">7</button>
+              <button class="button button__calc">8</button>
+              <button class="button button__calc">9</button>
+              <button class="button delete">DEL</button>
+              <button class="button button__calc">4</button>
+              <button class="button button__calc">5</button>
+              <button class="button button__calc">6</button>
+              <button class="button button__calcs add">+</button>
+              <button class="button button__calc">1</button>
+              <button class="button button__calc">2</button>
+              <button class="button button__calc">3</button>
+              <button class="button button__calcs minus">-</button>
+              <button class="button button__calc">.</button>
+              <button class="button button__calc ">0</button>
+              <button class="button button__calcs divide">/</button>
+              <button class="button button__calcs multiply">*</button>
+            </div>
+    
+            <div class="operation__buttons">
+              <button class="button button__operation reset">RESET</button>
+              <button class="button button__operation equal">=</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <script src="script.js"></script>
+</body>
+</html>

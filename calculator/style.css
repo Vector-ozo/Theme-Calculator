@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@700&display=swap');
+
+:root{
+    --main-background: hsl(222, 26%, 31%);
+    --toggle-background: hsl(223, 31%, 20%);
+    --output-background: hsl(224, 36%, 15%);
+    --transition: 0.5s ease-in-out;
+    --button-reset: hsl(225, 21%, 49%);
+    --button-reset-hover: hsl(225, 21%, 59%);
+    --button-reset-shadow: hsl(224, 28%, 35%);
+    --button-equal: hsl(6, 63%, 50%);
+    --button-equal-hover: hsl(6, 63%, 60%);
+    --button-equal-shadow: hsl(6, 70%, 34%);
+    --button-background: hsl(30, 25%, 89%);
+    --button-shadow: hsl(28, 16%, 65%);
+    --number-color: hsl(223, 31%, 20%);
+    --number-color-hover: hsl(30, 25%, 100%);
+    --text-color: hsl(0, 0%, 100%);
+    --action-color: hsl(0, 0%, 100%);
+    --action-equal-color: hsl(0, 0%, 100%);
+}
+
+.first-theme{
+    --main-background: hsl(222, 26%, 31%);
+    --toggle-background: hsl(223, 31%, 20%);
+    --output-background: hsl(224, 36%, 15%);
+    --transition: 0.5s ease-in-out;
+    --button-reset: hsl(225, 21%, 49%);
+    --button-reset-hover: hsl(225, 21%, 59%);
+    --button-reset-shadow: hsl(224, 28%, 35%);
+    --button-equal: hsl(6, 63%, 50%);
+    --button-equal-hover: hsl(6, 63%, 60%);
+    --button-equal-shadow: hsl(6, 70%, 34%);
+    --button-background: hsl(30, 25%, 89%);
+    --button-shadow: hsl(28, 16%, 65%);
+    --number-color: hsl(223, 31%, 20%);
+    --number-color-hover: hsl(30, 25%, 100%);
+    --text-color: hsl(0, 0%, 100%);
+    --action-color: hsl(0, 0%, 100%);
+    --action-equal-color: hsl(0, 0%, 100%);
+}
+
+.second-theme{
+    --main-background: hsl(0, 0%, 90%);
+    --toggle-background: hsl(0, 5%, 81%);
+    --output-background: hsl(0, 0%, 93%);
+    --transition: 0.5s ease-in-out;
+    --button-reset: hsl(185, 42%, 37%);
+    --button-reset-hover: hsl(185, 42%, 47%);
+    --button-reset-shadow: hsl(185, 58%, 25%);
+    --button-equal: hsl(25, 98%, 40%);
+    --button-equal-hover: hsl(25, 98%, 50%);
+    --button-equal-shadow: hsl(25, 99%, 27%);
+    --button-background: hsl(45, 7%, 89%);
+    --button-shadow: hsl(35, 11%, 61%);
+    --number-color: hsl(60, 10%, 19%);
+    --number-color-hover: hsl(45, 7%, 99%);
+    --text-color: hsl(60, 10%, 19%);
+    --action-color: hsl(0, 0%, 100%);
+    --action-equal-color: hsl(0, 0%, 100%);
+}
+
+.third-theme{
+    --main-background: hsl(268, 75%, 9%);
+    --toggle-background: hsl(268, 71%, 12%);
+    --output-background: hsl(268, 71%, 12%);
+    --transition: 0.5s ease-in-out;
+    --button-reset: hsl(281, 89%, 26%);
+    --button-reset-hover: hsl(281, 89%, 40%);
+    --button-reset-shadow: hsl(285, 91%, 52%);
+    --button-equal: hsl(176, 100%, 44%);
+    --button-equal-hover: hsl(176, 100%, 54%);
+    --button-equal-shadow: hsl(177, 92%, 70%);
+    --button-background: hsl(268, 47%, 21%);
+    --button-shadow: hsl(290, 70%, 36%);
+    --number-color: hsl(52, 100%, 62%);
+    --number-color-hover: hsl(268, 47%, 21%);
+    --text-color: hsl(52, 100%, 62%);
+    --action-color: hsl(0, 0%, 100%);
+    --action-equal-color: hsl(268, 75%, 9%); 
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--main-background);
+    font-family: League Spartan;
+}
+
+button{
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+
+.main{
+    width: 30%;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.logo{
+    color: var(--text-color);
+}
+
+.header__flex{
+    display: flex;
+    /* justify-content: space-between; */
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.theme__text{
+    font-size: 7px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-top: .5rem;
+}
+
+.toggle__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox{
+    opacity: 0;
+}
+
+.toggle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 14px;
+    background-color: var(--toggle-background);
+    border-radius: .5rem;
+}
+
+.label{
+    display: flex;
+    flex-direction: row;
+    column-gap: .25rem;
+}
+
+
+.ball{
+    position: relative;
+    opacity: 0;
+    left: -.35rem;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--button-equal);
+    cursor: pointer;
+}
+
+.show-ball{
+    opacity: 1;
+    transition: var(--transition);
+}
+
+.toggle__number{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    font-size: 7px;
+    font-weight: 700;
+    margin-bottom: .2rem;
+    color: var(--text-color);
+}
+
+.output{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 .5rem;
+    font-size: 1.75rem;
+    border-radius: .25rem;
+    color: var(--text-color);
+    background-color: var(--output-background);
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: .5rem;
+    margin-top: .75rem;
+    background-color: var(--toggle-background);
+    border-radius: .25rem;
+}
+
+.number__buttons{
+    width: 100%;
+    display: grid;
+    gap: .55rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.operation__buttons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .55rem;
+}
+
+.button__calc, .button__operation, .button__calcs, .delete{
+    border-radius: .25rem;
+    border: none;
+}
+
+.button__calc, .button__calcs{
+    padding: .5rem;
+    color: var(--number-color);
+    background-color: var(--button-background);
+    box-shadow: 0 -2px 0px var(--button-shadow) inset;
+}
+
+.button__operation{
+    padding: .5rem;
+    margin-top: .55rem;
+    font-size: 10px;
+}
+
+.delete{
+    font-size: 10px;
+}
+
+.equal{
+    background-color: var(--button-equal);
+    color: var(--action-equal-color);
+    box-shadow: 0 -2px 0px var(--button-equal-shadow) inset;
+}
+
+.reset, .delete{
+    background-color: var(--button-reset);
+    box-shadow: 0 -2px 0px var(--button-reset-shadow) inset;
+    color: var(--action-color);
+}
+
+.reset:hover, .delete:hover{
+    background-color: var(--button-reset-hover);
+}
+
+.equal:hover{
+    background-color: var(--button-equal-hover);
+}
+
+.button__calc:hover, .button__calcs:hover{
+    background-color: var(--number-color-hover);
+}
+
+
+@media screen and (max-width: 768px) {
+    .main{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .main{
+        width: 80%;
+        margin-top: 0;
+    }
+}
+
